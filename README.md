@@ -1,6 +1,6 @@
 # NextGen-Engagement-Program-Digital-Record
 
-This repository contains the official website for the NextGen Engagement Program.  
+This repository contains the official document site for the NextGen Engagement Program.  
 The website showcases information about the program, its purpose, milestones, batches, organizers, trainers, and student feedback.
 
  Live Demo
