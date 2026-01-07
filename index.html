@@ -629,7 +629,7 @@
     </section>
 
     <script>
-        const galleryObserver = new IntersectionObserver((entries) => {
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.remove('opacity-0', 'translate-y-8', 'translate-y-10', 'translate-y-12');
@@ -638,7 +638,7 @@
             });
         }, { threshold: 0.1 });
 
-        document.querySelectorAll('.reveal-gallery').forEach(el => galleryObserver.observe(el));
+        document.querySelectorAll('.reveal-gallery').forEach(el => observer.observe(el));
     </script>
 
    
