@@ -629,18 +629,30 @@
     </section>
 
     <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.remove('opacity-0', 'translate-y-8', 'translate-y-10', 'translate-y-12');
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                }
-            });
-        }, { threshold: 0.1 });
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                threshold: 0.1
+            };
 
-        document.querySelectorAll('.reveal-gallery').forEach(el => observer.observe(el));
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        console.log("Element visible:", entry.target); // Debugging line
+                        // Remove all possible hidden/translated states
+                        entry.target.classList.remove('opacity-0', 'translate-y-8', 'translate-y-10', 'translate-y-12');
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        // Optional: Stop observing once shown
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const elements = document.querySelectorAll('.reveal-gallery');
+            if (elements.length === 0) console.warn("No elements found with .reveal-gallery");
+            elements.forEach(el => observer.observe(el));
+        });
     </script>
-
    
         
   <footer class="bg-slate-950 text-slate-400 py-16 px-6 border-t border-white/5">
