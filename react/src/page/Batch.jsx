@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import useRevealElment from "../hooks/useRevealElement";
 import { Link } from "react-router-dom";
 
+{/*Add data to ../data/participantData.js for more batches or participant */}
 export default function Batch(){
     const { batchNumber } = useParams();
     useRevealElment("reveal-b1", 0.1, ["opacity-0", "translate-y-8", "translate-y-10"], ["opacity-100", "translate-y-0"]);
