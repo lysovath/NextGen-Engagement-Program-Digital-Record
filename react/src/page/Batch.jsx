@@ -4,17 +4,18 @@ import batches from "../data/partcipantData";
 import ProfileCard from "../component/card/ProfileCard";
 import { useParams } from "react-router-dom";
 import useRevealElment from "../hooks/useRevealElement";
+import Error from "./Error";
 import { Link } from "react-router-dom";
 
 {/*Add data to ../data/participantData.js for more batches or participant */}
 export default function Batch(){
     const { batchNumber } = useParams();
     useRevealElment("reveal-b1", 0.1, ["opacity-0", "translate-y-8", "translate-y-10"], ["opacity-100", "translate-y-0"]);
-    if(batchNumber < 1 || batchNumber > batches.length) {
-        return (
-            <section id="people" className="max-w-7xl mx-auto px-6 py-10 pb-32">
-                <h1 className="text-2xl font-bold text-center">Invalid Batch Number</h1>
-            </section>
+    if(batchNumber < 1 || batchNumber > batches.length || isNaN(batchNumber)){
+        return(
+            <>
+                <Error message="Invalid batch number." />
+            </>
         );
     }
     return(
@@ -22,7 +23,7 @@ export default function Batch(){
             <header className="sticky top-0 z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-white/10">
                 <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
                     <Link to="/" className="group flex items-center gap-2 text-slate-400 hover:text-orange-500 transition-colors">
-                        <svg className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        <svg className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
                         <span className="font-medium">Return to Hub</span>
                     </Link>
                     <div className="px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-500 text-xs font-bold uppercase tracking-widest">

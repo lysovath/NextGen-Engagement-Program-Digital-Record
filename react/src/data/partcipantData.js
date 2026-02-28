@@ -1,6 +1,6 @@
-import Leangsiv from "../assets/participants/Han Leangsiv.png"
-import Mengchhuong from "../assets/participants/AngMengchhuong.png"
-import Sonita from "../assets/participants/TeSonita.png"
+import Leangsiv from "../assets/participants/Han Leangsiv.webp"
+import Mengchhuong from "../assets/participants/AngMengchhuong.webp"
+import Sonita from "../assets/participants/TeSonita.webp"
 const batch = [
     {
         batchTitle: "Batch I - Pioneers",
