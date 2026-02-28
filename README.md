@@ -1,16 +1,44 @@
-# React + Vite
+# NextGen-Engagement-Program-Digital-Record
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the official website for the NextGen Engagement Program.  
+The website showcases information about the program, its purpose, milestones, batches, organizers, trainers, and student feedback.
 
-Currently, two official plugins are available:
+Live Demo
+=> https://nextgenengagementprogrambookrecord.netlify.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The NextGen Engagement Program is designed to empower students through:
 
-## Expanding the ESLint configuration
+- Training sessions
+- Hands-on projects
+- Show Day presentations
+- Incubation and collaboration across departments
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This website presents:
+
+- What is NextGen
+- Why students should join
+- Program milestones
+- Photo & video documentation
+- Student feedback
+- Organizer, trainer, and judge profiles
+- Batch information (Batch 1, Batch 2, Batch 3)
+
+---
+
+🛠 Technologies Used:
+Tailwind CSS
+React + Vite
+Git & GitHub
+Netlify (deployment)
+
+# Media Credits
+
+All photos, videos, and content belong to the NextGen Engagement Program and are used for educational and promotional purposes.
+
+# License
+
+This project is for educational and institutional use.
