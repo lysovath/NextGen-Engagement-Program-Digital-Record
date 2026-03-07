@@ -29,11 +29,6 @@ This website presents:
 
 ---
 
-🛠 Technologies Used:
-Tailwind CSS
-React + Vite
-Git & GitHub
-Netlify (deployment)
 
 # Media Credits
 
