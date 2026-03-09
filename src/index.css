@@ -1,0 +1,64 @@
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --brand-50: hsl(25, 100%, 95%);
+  --brand-100: hsl(25, 100%, 90%);
+  --brand-200: hsl(25, 100%, 80%);
+  --brand-300: hsl(25, 100%, 70%);
+  --brand-400: hsl(25, 100%, 60%);
+  --brand-500: hsl(25, 100%, 50%);
+  --brand-600: hsl(25, 100%, 45%);
+  --brand-700: hsl(25, 90%, 40%);
+  --brand-800: hsl(25, 80%, 35%);
+  --brand-900: hsl(25, 70%, 25%);
+  scroll-behavior: smooth;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+@layer utilities {
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-col-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .flex-col-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+
+}
+
