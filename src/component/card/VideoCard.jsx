@@ -21,6 +21,7 @@ export default function VideoCard({
         <video
           className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
           controls
+          preload="metadata"
         >
           <source src={src} type={type} />
         </video>
