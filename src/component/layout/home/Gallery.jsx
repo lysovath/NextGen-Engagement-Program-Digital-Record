@@ -12,7 +12,7 @@ import lastClass2 from "../../../assets/eventPhotos/lastClass2.jpg";
 import award1 from "../../../assets/eventPhotos/award1.jpg";
 import award from "../../../assets/eventPhotos/award.jpg";
 import trainingVid from "../../../assets/eventPhotos/IMG_8585.mp4"
-import feedBackVid from "../../../assets/eventPhotos/ALL_IN.mp4"
+import feedBackVid from "../../../assets/eventPhotos/All_IN.mp4"
 
 export default function Gallery() {
     useRevealElment("reveal-gallery", 0.1 , ["opacity-0", "translate-y-8", "translate-y-10", "translate-y-12"],["opacity-100", "translate-y-0"]);
