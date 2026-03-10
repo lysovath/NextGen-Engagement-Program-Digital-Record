@@ -97,8 +97,8 @@ export default function Gallery() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                        <VideoCard src="https://res.cloudinary.com/ddvoaqxjk/video/upload/v1773114710/All_IN_gfqw5d.mp4" fallbackSrc="/videos/IMG_8585.mp4" label="Training" title="Training Phase" description="Students and trainers engagement" duration="01:01"></VideoCard>
-                        <VideoCard src="https://res.cloudinary.com/ddvoaqxjk/video/upload/v1773114987/IMG_8585_e1wyez.mp4" fallbackSrc="/videos/All_IN.mp4" label="Feedback" title="Participant Feedback" description="Real reactions from our Nextgen participants." duration="04:20"></VideoCard>
+                        <VideoCard src="https://res.cloudinary.com/ddvoaqxjk/video/upload/v1773114710/All_IN_gfqw5d.mp4" label="Training" title="Training Phase" description="Students and trainers engagement" duration="01:01"></VideoCard>
+                        <VideoCard src="https://res.cloudinary.com/ddvoaqxjk/video/upload/v1773114987/IMG_8585_e1wyez.mp4" label="Feedback" title="Participant Feedback" description="Real reactions from our Nextgen participants." duration="04:20"></VideoCard>
                     </div>
                 </div> 
             </div>
