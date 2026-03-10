@@ -11,8 +11,6 @@ import lastClass1 from "../../../assets/eventPhotos/lastClass1.jpg";
 import lastClass2 from "../../../assets/eventPhotos/lastClass2.jpg";
 import award1 from "../../../assets/eventPhotos/award1.jpg";
 import award from "../../../assets/eventPhotos/award.jpg";
-const trainingVid = "/videos/IMG_8585-1.mp4";
-const feedBackVid = "/videos/All_IN-1.mp4";
 
 export default function Gallery() {
     useRevealElment("reveal-gallery", 0.1 , ["opacity-0", "translate-y-8", "translate-y-10", "translate-y-12"],["opacity-100", "translate-y-0"]);
@@ -99,8 +97,8 @@ export default function Gallery() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                        <VideoCard src={trainingVid} label="Training" title="Training Phase" description="Students and trainers engagement" duration="01:01"></VideoCard>
-                        <VideoCard src={feedBackVid} label="Feedback" title="Participant Feedback" description="Real reactions from our Nextgen participants." duration="04:20"></VideoCard>
+                        <VideoCard src="/videos/IMG_8585-1.mp4" label="Training" title="Training Phase" description="Students and trainers engagement" duration="01:01"></VideoCard>
+                        <VideoCard src="/videos/All_IN-1.mp4" label="Feedback" title="Participant Feedback" description="Real reactions from our Nextgen participants." duration="04:20"></VideoCard>
                     </div>
                 </div> 
             </div>
